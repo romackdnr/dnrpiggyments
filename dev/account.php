@@ -43,7 +43,7 @@ if(isset($_POST['login'])) {
 		<h1>Login or Create Account</h1>
 		<hr />
 	</hgroup>
-	
+
 	<ul class='account_info col1'>
 		<li id=account_login>
 		<h3><img src="<?=$root?>assets/images/icons/icon_page_white.gif" width="16" height="16" alt=""> New Customers</h3>
@@ -54,21 +54,22 @@ if(isset($_POST['login'])) {
 		<li id=account_register class=last>
 
 		<form action="" method="post" class=multiform>
-		<h3><img src="<?=$root?>assets/images/icons/icon_page_white_text.gif" width="16" height="16" alt=""> Registered Customers</h3>
-		<p>If you have an account with us, please log in.</p>
-		<dl>
-		<dt><label>Username *</label>
-		<input type="text" name="username" class=:required size="50"></dt>
-		<dt><label>Password *</label>
-		<input type="password" name="password" class=:required size="50"></dt>
-
-		</dl>
-		<?
-		if(isset($error)) {
-		?>
-		<div class="error"><?=$error?></div>
-		<? } ?>
-		<button type="submit" class=btn_submit name="login">Login</button>
+			<h3><img src="<?=$root?>assets/images/icons/icon_page_white_text.gif" width="16" height="16" alt=""> Registered Customers</h3>
+			<p>If you have an account with us, please log in.</p>
+			<dl>
+				<dt>
+					<label>Username *</label>
+					<input type="text" name="username" class=:required size="50">
+				</dt>
+				<dt>
+					<label>Password *</label>
+					<input type="password" name="password" class=:required size="50">
+				</dt>
+			</dl>
+			<? if(isset($error)): ?>
+				<div class="error"><?=$error?></div>
+			<? endif; ?>
+			<button type="submit" class=btn_submit name="login">Login</button>
 		</form>
 		<div class='button_layer left'><a href="<?=$root?>forgot-password.html" class=ui_txt>Forgot Username / Password?</a></div>
 		</li>
