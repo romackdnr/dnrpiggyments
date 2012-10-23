@@ -25,7 +25,7 @@ if(isset($_POST['login'])) {
 				$links = $ROOT_URL.'billing-info.html';
 				header("Location: $links");					
 			} else {				
-				$links = $ROOT_URL;
+				$links = $ROOT_URL . 'account-information.php';
 				header("Location: $links");			
 			}
 	} else {		
