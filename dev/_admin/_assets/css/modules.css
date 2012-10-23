@@ -1,0 +1,121 @@
+/*----------------------------------------
+Name: modules.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Page Alert Display*/
+.alert	{ clear:both; float:left; display:block; background:#A30; font:normal 15px Arial; color:#FFF; text-align:center; width:100%; margin:10px 0 0; padding:5px 0; }
+
+#modules																{ float:left; position:relative; width:1048px; margin:0; padding:10px; border:solid 1px #CCC; }
+#module_box															{ width:1048px; margin:0; }
+#module_box h3							 						{ font:normal 17px Arial; margin-bottom:10px; }
+#module_box ul													{ float:left; width:1048px; list-style:none; margin:0; overflow:hidden; }
+#module_box ul li												{ float:left; line-height:12px; width:163px; height:113px; margin:0 11px 10px 0; border:solid 1px #CCC; }
+#module_box ul li	a											{ display:block; background:#eaeaea; color:#555; width:143px; height:103px; padding:0 10px 10px 10px; }
+#module_box ul li a:hover 							{ background:#DDD; cursor:pointer; }
+#module_box ul li span									{ position:relative; top:35px; font-size:11px; color:#666; margin:0; }
+#module_box ul li img										{ position:relative; top:10px; margin-right:5px; }
+
+
+/* Contents
+----------------------------------------*/
+
+#newsletter_page,
+#photo_page,
+#video_page,
+#blog_page,
+#store_page															{ clear:both; float:left; position:relative; width:1010px; margin:15px 0; }
+
+#newsletter_page h3,
+#photo_page h3,
+#video_page h3,
+#blog_page h3,
+#store_page h3													{ position:relative; font:normal 22px Arial; margin:0; }
+
+/*Newsletter*/
+#newsletter_page fieldset 							{ width:auto; margin:20px 0; padding:10px; }
+#newsletter_page legend 								{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#newsletter_page ul 										{ display:block; list-style:none; width:auto; margin:10px 0; }
+#newsletter_page ul li 									{ margin-bottom:10px; }
+#newsletter_page input 									{ display:block; color:#666; width:350px; margin:2px 0; padding:5px; }
+#newsletter_page input:focus						{ color:#000; }
+#newsletter_page textarea 							{ display:block; width:1035px; height:150px; margin:2px 0; padding:5px; overflow:auto; }
+
+#news_preview														{ clear:both; position:relative; background:transparent; width:700px; margin:10px auto 0; }
+#news_preview thead											{ background:url(../../_modules/mods_news/images/bg_header.jpg) no-repeat 0 0; width:700px; }
+#news_preview tbody											{ background:#FFF; width:660px; height:160px; }
+#news_preview tfoot											{ background:url(../../_modules/mods_news/images/bg_footer.jpg) no-repeat top center; font-size:11px; color:#999; width:700px; height:120px; }
+
+#news_preview thead td									{ height:311px; }
+#news_preview thead h3									{ font-size:24px; color:#FFF; text-shadow:1px 1px 0 #000; line-height:22px; margin:0 0 5px; padding-left:10px; }
+#news_preview tbody td,
+#news_preview tfoot	td									{ padding:20px 20px 0 20px;  }
+
+.news_send															{ position:relative; text-align:center; width:100%; height:35px; margin-bottom:20px; padding-top:15px; }
+.news_send a														{ background:#ececec; color:#333; width:120px; margin:10px 5px; padding:5px 10px; }
+.news_send a:hover											{ background:#d1d1d1; color:#333; width:120px; margin:10px 5px; padding:5px 10px; }
+
+
+/*Photo Gallery*/
+#photo_overview													{ clear:both; float:left; position:relative; width:1070px; margin:15px 0; }
+#photo_overview h3 											{ position:relative; font:normal 22px Arial; margin:0; z-index:0; }
+#photo_overview ul.btn									{ position:absolute; top:0; right:0; z-index:1;   }
+#photo_overview ul.btn li								{ float:left; display:inline; margin-left:10px;  z-index:1; }
+#photo_overview ul.btn li a							{ display:block; color:#555; background:#EFEFEF url(../../_modules/mods_blog/images/new.png) no-repeat 10px 5px; font-size:12px; padding:5px 10px 5px 35px; border:solid 1px #CCC; text-decoration:none; }										{ display:block; color:#555; text-decoration:none; }
+
+#photo_page fieldset 										{ position:relative; width:auto; margin:20px 0; padding:10px; }
+#photo_page legend 											{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#photo_page ul 													{ display:block; list-style:none; width:auto; margin:10px 0; }
+#photo_page ul li 											{ margin-bottom:10px; }
+#photo_page input 											{ display:block; color:#666; width:350px; margin:2px 0; padding:5px; }
+#photo_page input:focus									{ color:#000; }
+#photo_page textarea 										{ display:block; width:1035px; height:150px; margin:2px 0; padding:5px; overflow:auto; }
+
+#photo_page #preview										{ position:absolute; top:-25px; right:25px; width:250px; height:200px; }
+#photo_page #preview .previewbox				{ position:relative; display:block; background:#CCC; text-align:center; width:150px; height:150px; margin:10px auto; }
+
+
+/*Blog*/
+#blog_overview													{ clear:both; float:left; position:relative; width:1090px; margin:15px 0; }
+#blog_overview h3 											{ position:relative; font:normal 22px Arial; margin:0; z-index:0; }
+#blog_overview ul.btn									{ position:absolute; top:0; right:0; z-index:1;   }
+#blog_overview ul.btn li								{ float:left; display:inline; margin-left:10px; }
+#blog_overview ul.btn li a							{ display:block; color:#555; background:#EFEFEF url(../../_modules/mods_blog/images/new.png) no-repeat 10px 5px; font-size:12px; padding:5px 10px 5px 35px; border:solid 1px #CCC; text-decoration:none; }
+
+#blog_page fieldset 										{ width:auto; margin:20px 0; padding:10px; }
+#blog_page legend 											{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#blog_page ul 													{ display:block; list-style:none; width:auto; margin:10px 0; }
+#blog_page ul li 												{ margin-bottom:10px; }
+#blog_page input 												{ display:block; color:#666; width:350px; margin:2px 0; padding:5px; }
+#blog_page input:focus									{ color:#000; }
+#blog_page textarea 										{ display:block; width:1035px; height:150px; margin:2px 0; padding:5px; overflow:auto; }
+
+
+/*Store*/
+#store_overview													{ clear:both; float:left; position:relative; width:1090px; margin:15px 0; }
+#store_overview h3 											{ position:relative; font:normal 22px Arial; margin:0; z-index:0; }
+#store_overview ul.btn									{ position:absolute; top:0; right:0; z-index:1;   }
+#store_overview ul.btn li								{ float:left; display:inline; margin-left:10px; }
+#store_overview ul.btn li a							{ display:block; color:#555; background:#EFEFEF url(../../_modules/mods_blog/images/new.png) no-repeat 10px 5px; font-size:12px; padding:5px 10px 5px 35px; border:solid 1px #CCC; text-decoration:none; }
+
+
+#store_page fieldset 										{ position:relative; width:auto; margin:20px 0; padding:10px; }
+#store_page legend 											{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#store_page ul 													{ display:block; list-style:none; width:auto; margin:10px 0; }
+#store_page ul li 											{ margin-bottom:10px; }
+#store_page input 											{ display:block; color:#666; width:350px; margin:2px 0; padding:5px; }
+#store_page input:focus									{ color:#000; }
+#store_page textarea 										{ display:block; width:1035px; height:150px; margin:2px 0; padding:5px; overflow:auto; }
+
+#store_page #preview										{ position:absolute; top:-25px; right:25px; width:250px; height:200px; }
+#store_page #preview .previewbox				{ position:relative; display:block; background:#CCC; text-align:center; width:150px; height:150px; margin:10px auto; }
+
+
+
+

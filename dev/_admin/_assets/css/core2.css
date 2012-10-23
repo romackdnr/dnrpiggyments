@@ -1,0 +1,83 @@
+/*----------------------------------------
+Name: core2.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Imports*/
+@import url("reset.css");
+@import url("navigation.css");
+
+/*Display Block Container*/
+header, section, footer, article, aside, nav, figure { display: block; text-align:left; }
+
+body 																		{ background:#CCC; font:normal 13px/16px Arial; color:#555; }
+#wrapper 																{ float:left; position:relative; background:url(../images/bg_header2.jpg) repeat-x top left; width:100%; }
+figure 																	{ position:relative; width:1110px; margin:auto; }
+
+header 																	{ float:left; position:relative; width:1110px; height:125px; padding-top:5px; }
+section																	{ clear:both; position:relative; background:url(../images/section_bg.jpg) repeat-y; width:1090px; min-height:700px; margin:10px 0 40px; padding:10px 10px 20px 10px; }
+section	.stop														{ position:absolute; top:0; left:0; background:url(../images/section_top_bg.jpg) no-repeat; width:1110px; height:10px; }
+section	.sbottom 												{ position:absolute; bottom:0; left:0; background:url(../images/section_bottom_bg.jpg) no-repeat; width:1110px; height:10px; }
+article																	{  }
+aside 																	{  }
+footer 																	{ position:fixed; bottom:0; font-size:11px; color:#FFF; text-align:center; text-transform:uppercase; width:100%; padding:5px 0; border-bottom:solid 5px #da621f; }
+footer small														{ background:#da621f; padding:5px 10px 7px 10px;
+																					-moz-border-radius:5px 5px 0 0; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px; }
+
+
+#placeholder  													{ position:relative;  width:1050px; height:300px; margin:10px auto;  }
+
+/* Contents
+----------------------------------------*/
+
+/*Header*/
+header h1 															{ float:left; background:url(../images/dnr_logo.jpg) no-repeat; width:95px; height:84px; margin-right:10px; }
+header strong														{ position:relative; top:35px; }
+
+
+/*Section*/
+#container 															{ float:left; width:1070px; min-height:550px; margin:10px; }
+#container h2 													{ position:relative; left:-2px; font:normal 2.5em Arial; margin-bottom:5px; }
+#container h3 													{ position:relative; left:0; font:normal 17px Arial; margin-bottom:5px; }
+#container ul 													{ line-height:18px; margin:10px 0 10px 25px; }
+
+
+/*Overview Page*/
+.home_info h3,
+.home_news h3,
+.home_news h4														{ position:relative; left:-2px; font:normal 1.5em Arial;  margin-bottom:10px; }
+.home_news h4														{ margin-top:20px; }
+.home_info, 				
+.home_news															{ position:relative; background:#EFEFEF; height:230px; padding:10px; border:solid 1px #CCC; overflow:auto; }
+.home_info 															{ width:698px; }
+.home_news															{ width:303px;  overflow:hidden; }
+.home_news dl														{ position:relative; margin:0; }
+.home_news dl dd												{ margin-bottom:10px; }
+
+
+/*Page Alert Display*/
+.alert	{ clear:both; float:left; display:block; background:#A30; font:normal 15px Arial; color:#FFF; text-align:center; width:100%; margin:10px 0 0; padding:5px 0; }
+
+
+/*Page Tabs*/
+#page_tabs 															{ float:left; position:relative; width:1070px; margin:10px 0; padding:0; }
+#page_tabs #pt_selectors 								{ float:left; list-style:none; width:100%; margin:10px 0 0; padding:0; border-bottom:solid 1px #CCC; }
+#page_tabs #pt_selectors li							{ float:left; background:#CCC; font-size:11px; font-weight:bold; text-transform:uppercase; text-shadow:1px 1px 0 #FFF; cursor:pointer; margin-right:1px; 
+																					-moz-border-radius:5px 5px 0 0; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px; }
+#page_tabs #pt_selectors li:first-child	{ margin-left:5px; }
+#page_tabs #pt_selectors li a						{ display:block; color:#555; padding:7px 10px; }
+#page_tabs #pt_selectors li a:hover			{ background:#da621f; color:#FFF; text-shadow:none;
+																					-moz-border-radius:5px 5px 0 0; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px; }
+
+
+/* IE Hack Elements
+----------------------------------------*/
+section		{ *margin:0 0 40px; }
+.iecol1		{ padding:25px 0; }
+

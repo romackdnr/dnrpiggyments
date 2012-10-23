@@ -1,0 +1,46 @@
+/*----------------------------------------
+Name: core2.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Imports*/
+@import url("reset.css");
+
+body																		{ font:normal 13px/16px Arial; color:#555; padding:0 10px; }
+
+
+/*Page Alert Display*/
+.alert																	{ clear:both; float:left; display:block; background:#A30; font:normal 15px Arial; color:#FFF; text-align:center; width:100%; margin:10px 0 0; padding:5px 0; }
+.alertbox																{ clear:both; position:relative; display:block; background:#EEE; font:normal 13px Arial; color:#555; text-align:center; width:25%; margin:auto; padding:10px 0; border:solid 1px #999; }
+.alertbox	p															{ margin-bottom:20px; }
+
+/*Page Manager*/
+#page_manager 													{ float:left; width:1090px; margin:15px 0 35px; border:solid 1px #CCC; }
+#page_manager thead, tbody 							{ width:1090px; padding:5px; }
+#page_manager thead td 									{ background:#CCC; font-weight:bold; padding:7px 3px 7px 8px; }
+#page_manager tbody td 									{ padding:5px 3px 5px 8px; }
+#page_manager tbody td img							{ display:inline; margin:0 7px; }
+	#page_manager tbody .row1 						{ background:#FFF; }
+	#page_manager tbody .row2							{ background:#EFEFEF; }
+	#page_manager tbody tr:hover					{ background:#DDD; } 
+#page_manager tfoot th 									{ background:#CCC; padding:5px; }
+#page_manager tfoot dl 									{ float:left; font-size:11px; font-weight:normal; width:100%; }
+#page_manager tfoot dl dd								{ color:#999; margin:0; }
+#page_manager tfoot dl dd a							{ color:#555; margin:0; }
+
+
+.submission 														{ position:relative; text-align:center; width:100%; margin:10px auto; padding:0; }
+.submission li 													{ display:inline; }
+.submission a 													{ background:#CCC; color:#333; width:120px; margin:10px 5px; padding:5px 10px; border:solid 1px #999; }
+.submission a:hover											{ background:#d1d1d1; color:#333; width:120px; margin:10px 5px; padding:5px 10px; }
+
+
+/* IE Hack Elements
+----------------------------------------*/
+.submission { *padding:0 0 10px; }

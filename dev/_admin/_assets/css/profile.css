@@ -1,0 +1,22 @@
+/*----------------------------------------
+Name: profile.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Page Alert Display*/
+.alert	{ clear:both; float:left; display:block; background:#A30; font:normal 15px Arial; color:#FFF; text-align:center; width:100%; margin:10px 0 0; padding:5px 0; }
+
+/*Profile Page*/
+#profile_page 													{ float:left; width:1070px; margin:15px 0; }
+#profile_page fieldset 									{ width:auto; margin-bottom:20px; padding:10px; }
+#profile_page legend 										{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#profile_page ul 												{ display:block; list-style:none; width:auto; margin:10px 0; }
+#profile_page ul li 										{ margin-bottom:10px; }
+#profile_page input 										{ display:block; width:350px; margin:2px 0; padding:5px; }
+#profile_page textarea 									{ display:block; width:1035px; height:150px; margin:2px 0; padding:5px; overflow:auto; }

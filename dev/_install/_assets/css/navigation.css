@@ -1,0 +1,78 @@
+/*----------------------------------------
+Name: navigation.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Menu Navigation
+----------------------------------------*/
+header #menunav1	{ position:absolute; top:5px; right:0; background:url(../images/menunav/menunav.jpg) no-repeat; width:295px; height:55px; }
+header #menunav2	{ clear:both; float:left; width:1110px; height:30px; }
+
+header #menunav2 ul	{ list-style:none; width:auto; margin:7px 0 0 5px; }
+header #menunav2 ul li { float:left; display:inline; width:auto; margin:0 5px; padding:0 5px; }
+header #menunav2 ul li a { display:block; color:#555; padding-bottom:5px; }
+header #menunav2 ul li a:hover { text-decoration:none; border-bottom:solid 3px #da621f; }
+
+
+
+#menu ul { list-style:none; }
+#menu { position:relative; background: url(../images/menunav/menunav.jpg) no-repeat; width:317px; height:55px; }
+#menu ul.panel1, #menu ul.panel2, #menu ul.panel3, #menu ul.panel4
+{ position:absolute; top:0; height:55px; }
+#menu ul a, #menu ul span
+{ display:block; cursor:pointer; height:55px; }
+#menu ul a:hover, #menu ul span:hover
+{ background: url(../images/menunav/menunav.jpg) no-repeat; }
+
+#menu ul.panel1, #menu ul.panel1 a { left:0; width:105px; }
+	#menu ul.panel1 a:hover { background-position: 0 -55px; }
+#menu ul.panel2, #menu ul.panel2 a { left:106px; width:105px; }
+	#menu ul.panel2 a:hover { background-position: -106px -55px; }
+#menu ul.panel3, #menu ul.panel3 a { left:212px; width:105px; }
+	#menu ul.panel3 a:hover { background-position: -212px -55px; }
+
+/*
+#menu ul ul { position:absolute; top:55px; left:0; display:none; }
+#menu li { color:default; }
+#menu li:hover { cursor:pointer; }
+#menu a { color:default; }
+#menu a:hover { color:default; }
+
+#menu li:hover ul ul,
+#menu li li:hover ul ul,
+#menu li li li:hover ul ul,
+#menu li li li li:hover ul ul 
+{ display:none; }
+
+#menu li:hover ul,
+#menu li li:hover ul,
+#menu li li li:hover ul,
+#menu li li li li:hover ul 
+{ display:block; width:auto; margin:0; padding:0; }
+*/
+
+/*Parent Menu
+#menu ul li ul li:hover { position:relative; }
+#menu ul li ul li a { display:block; background:#273246; font-weight:bold; color:#FFF; height:20px; padding:5px; border:solid 1px #171a1f; border-top:none; }
+#menu ul li ul li a:hover { background:#031e4b; color:#FFF; }
+*/
+
+/*Child Menu
+#menu ul.parent1 li { width:150px; }
+#menu ul.parent1 li ul.child { position:absolute; top:5px; left:145px; border-top:solid 1px #171a1f;  }
+#menu ul.parent1 li ul.child li { position:relative; width:160px; }
+#menu ul.parent1 li ul.child li a { display:block; background:#273246; font-weight:bold; color:#FFF; height:20px; padding:5px; border:solid 1px #171a1f; border-top:none; }
+#menu ul.parent1 li ul.child li a:hover { background:#031e4b; color:#FFF; }
+
+#menu ul.parent2 li { width:150px; }
+#menu ul.parent2 li ul.child { position:absolute; top:5px; left:145px; border-top:solid 1px #171a1f;  }
+#menu ul.parent2 li ul.child li { position:relative; width:185px; }
+#menu ul.parent2 li ul.child li a { display:block; background:#273246; font-weight:bold; color:#FFF; height:20px; padding:5px; border:solid 1px #171a1f; border-top:none; }
+#menu ul.parent2 li ul.child li a:hover { background:#031e4b; color:#FFF; }
+
+#menu ul.parent3 li { width:150px; }
+#menu ul.parent4 li { width:150px; }
+*/

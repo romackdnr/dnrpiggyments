@@ -1,0 +1,20 @@
+/*----------------------------------------
+Name: core2.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Imports*/
+@import url("reset.css");
+
+body		{ font:normal 13px/16px Arial; color:#555; padding:0 10px; }
+
+
+/* IE Hack Elements
+----------------------------------------*/
+.iecol1		{ padding:25px 0; }

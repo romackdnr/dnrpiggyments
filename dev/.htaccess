@@ -1,0 +1,147 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^_admin/welcome/ _admin/overview.php
+RewriteRule ^_admin/page_pages/ _admin/page.php
+RewriteRule ^_admin/page_new/ _admin/page_add.php
+RewriteRule ^_admin/editPage/([0-9]+)/$ _admin/_manager/includes/page_mod.php?id=$1
+RewriteRule ^_admin/page_pagesDelete/([0-9]+)/$ _admin/page.php?delete=$1
+RewriteRule ^_admin/modules_pages/ _admin/modules.php
+
+RewriteRule ^_admin/modules_newsletter/view/ _admin/_modules/mods_news/dashboard.php
+RewriteRule ^_admin/modules_newsletter/add/ _admin/_modules/mods_news/create.php
+RewriteRule ^_admin/modules_newsletter/edit/([0-9]+)/$ _admin/_modules/mods_news/edit.php?id=$1
+RewriteRule ^_admin/modules_newsletter/preview/([0-9]+)/$ _admin/_modules/mods_news/preview.php?id=$1
+RewriteRule ^_admin/modules_newsletter/delete/([0-9]+)/$ _admin/_modules/mods_news/dashboard.php?delete=$1
+
+RewriteRule ^_admin/photo_gallery/ _admin/_modules/mods_photo/dashboard.php
+RewriteRule ^_admin/photo_upload/ _admin/_modules/mods_photo/create.php
+RewriteRule ^_admin/photo_edit/([0-9]+)/([a-zA-Z0-9_-]+)/$ _admin/_modules/mods_photo/edit.php?id=$1
+RewriteRule ^_admin/photo_delete/([0-9]+)/([a-zA-Z0-9_-]+)/$ _admin/_modules/mods_photo/dashboard.php?delete=$1
+
+RewriteRule ^_admin/video_gallery/ _admin/_modules/mods_video/dashboard.php
+RewriteRule ^_admin/video_upload/ _admin/_modules/mods_video/create.php
+RewriteRule ^_admin/video_edit/([0-9]+)/([a-zA-Z0-9_-]+)/$ _admin/_modules/mods_video/edit.php?id=$1
+RewriteRule ^_admin/video_delete/([0-9]+)/([a-zA-Z0-9_-]+)/$ _admin/_modules/mods_video/dashboard.php?delete=$1
+
+RewriteRule ^_admin/blogs/ _admin/_modules/mods_blog/dashboard.php
+
+RewriteRule ^_admin/modules_blogs/view/ _admin/_modules/mods_blog/dashboard.php
+RewriteRule ^_admin/modules_blogs/add/ _admin/_modules/mods_blog/create.php
+RewriteRule ^_admin/modules_blogs/edit/([0-9]+)/$ _admin/_modules/mods_blog/edit.php?id=$1
+RewriteRule ^_admin/modules_blogs/delete/([0-9]+)/$ _admin/_modules/mods_blog/dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_category/view/ _admin/_modules/mods_store/category_dashboard.php
+RewriteRule ^_admin/modules_category/add/ _admin/_modules/mods_store/category_create.php
+RewriteRule ^_admin/modules_category/edit/([0-9]+)/$ _admin/_modules/mods_store/category_edit.php?id=$1
+RewriteRule ^_admin/modules_category/delete/([0-9]+)/$ _admin/_modules/mods_store/category_dashboard.php?delete=$1
+
+
+RewriteRule ^_admin/modules_products_category/view/ _admin/_modules/mods_store/products_category_dashboard.php
+RewriteRule ^_admin/modules_products/view/$ _admin/_modules/mods_store/products_dashboard.php
+RewriteRule ^_admin/modules_products/add/$ _admin/_modules/mods_store/products_create.php
+RewriteRule ^_admin/modules_products/edit/([0-9]+)/$ _admin/_modules/mods_store/products_edit.php?id=$1
+RewriteRule ^_admin/modules_products/delete/([0-9]+)/$ _admin/_modules/mods_store/products_dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_products/options/([0-9]+)/$ _admin/_modules/mods_store/products_options.php?id=$1
+RewriteRule ^_admin/modules_products_options/edit/([0-9]+)/([0-9]+)/$ _admin/_modules/mods_store/products_options_edit.php?id=$1&product_id=$2
+RewriteRule ^_admin/modules_products_options/delete/([0-9]+)/([0-9]+)/$ _admin/_modules/mods_store/products_options.php?delete=$1&product_id=$2
+
+RewriteRule ^_admin/modules_category_options/view/ _admin/_modules/mods_options/category_dashboard.php
+RewriteRule ^_admin/modules_category_options/add/ _admin/_modules/mods_options/category_create.php
+RewriteRule ^_admin/modules_category_options/edit/([0-9]+)/$ _admin/_modules/mods_options/category_edit.php?id=$1
+RewriteRule ^_admin/modules_category_options/delete/([0-9]+)/$ _admin/_modules/mods_options/category_dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_options/view/([0-9]+)/ _admin/_modules/mods_options/options_dashboard.php?category_id=$1
+RewriteRule ^_admin/modules_options/add/([0-9]+)/ _admin/_modules/mods_options/options_create.php?category_id=$1
+RewriteRule ^_admin/modules_options/edit/([0-9]+)/([0-9]+)/$ _admin/_modules/mods_options/options_edit.php?id=$1&category_id=$2
+RewriteRule ^_admin/modules_options/delete/([0-9]+)/([0-9]+)/$ _admin/_modules/mods_options/options_dashboard.php?delete=$1category_id=$2
+
+RewriteRule ^_admin/modules_specials/view/ _admin/_modules/mods_specials/products_dashboard.php
+RewriteRule ^_admin/modules_specials/add/ _admin/_modules/mods_specials/products_create.php
+RewriteRule ^_admin/modules_specials/edit/([0-9]+)/$ _admin/_modules/mods_specials/products_edit.php?id=$1
+RewriteRule ^_admin/modules_specials/delete/([0-9]+)/$ _admin/_modules/mods_specials/products_dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_forum_category/view/ _admin/_modules/mods_forum/category_dashboard.php
+RewriteRule ^_admin/modules_forum_category/add/ _admin/_modules/mods_forum/category_create.php
+RewriteRule ^_admin/modules_forum_category/edit/([0-9]+)/$ _admin/_modules/mods_forum/category_edit.php?id=$1
+RewriteRule ^_admin/modules_forum_category/delete/([0-9]+)/$ _admin/_modules/mods_forum/category_dashboard.php?delete=$1
+RewriteRule ^_admin/modules_forum_category/open/([0-9]+)/$ _admin/_modules/mods_forum/category_dashboard.php?id=$1
+
+RewriteRule ^_admin/modules_forum/view/ _admin/_modules/mods_forum/forum_dashboard.php
+RewriteRule ^_admin/modules_forum/add/ _admin/_modules/mods_forum/forum_create.php
+RewriteRule ^_admin/modules_forum/edit/([0-9]+)/$ _admin/_modules/mods_forum/forum_edit.php?id=$1
+RewriteRule ^_admin/modules_forum/delete/([0-9]+)/$ _admin/_modules/mods_forum/forum_dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_news/view/ _admin/_modules/mods_event/dashboard.php
+RewriteRule ^_admin/modules_news/add/ _admin/_modules/mods_event/create.php
+RewriteRule ^_admin/modules_news/edit/([0-9]+)/$ _admin/_modules/mods_event/edit.php?id=$1
+RewriteRule ^_admin/modules_news/delete/([0-9]+)/$ _admin/_modules/mods_event/dashboard.php?delete=$1
+
+
+
+RewriteRule ^_admin/modules_orders/view/ _admin/_modules/mods_order/dashboard.php
+RewriteRule ^_admin/modules_orders/preview/([a-zA-Z0-9_-]+)/$ _admin/_modules/mods_order/preview.php?id=$1
+RewriteRule ^_admin/modules_orders/delete/([0-9]+)/$ _admin/_modules/mods_order/dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_contact/view/ _admin/_modules/mods_contact/dashboard.php
+RewriteRule ^_admin/modules_contact/add/ _admin/_modules/mods_contact/create.php
+RewriteRule ^_admin/modules_contact/edit/([0-9]+)/$ _admin/_modules/mods_contact/edit.php?id=$1
+RewriteRule ^_admin/modules_contact/delete/([0-9]+)/$ _admin/_modules/mods_contact/dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_testimonials/view/ _admin/_modules/mods_testimonials/dashboard.php
+RewriteRule ^_admin/modules_testimonials/add/ _admin/_modules/mods_testimonials/create.php
+RewriteRule ^_admin/modules_testimonials/edit/([0-9]+)/$ _admin/_modules/mods_testimonials/edit.php?id=$1
+RewriteRule ^_admin/modules_testimonials/delete/([0-9]+)/$ _admin/_modules/mods_testimonials/dashboard.php?delete=$1
+
+
+RewriteRule ^_admin/modules_client/view/ _admin/_modules/mods_client/dashboard.php
+RewriteRule ^_admin/modules_client/add/ _admin/_modules/mods_client/create.php
+RewriteRule ^_admin/modules_client/edit/([0-9]+)/$ _admin/_modules/mods_client/edit.php?id=$1
+RewriteRule ^_admin/modules_client/delete/([0-9]+)/$ _admin/_modules/mods_client/dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_coupon/view/ _admin/_modules/mods_coupon/dashboard.php
+RewriteRule ^_admin/modules_coupon/add/ _admin/_modules/mods_coupon/create.php
+RewriteRule ^_admin/modules_coupon/edit/([0-9]+)/$ _admin/_modules/mods_coupon/edit.php?id=$1
+RewriteRule ^_admin/modules_coupon/delete/([0-9]+)/$ _admin/_modules/mods_coupon/dashboard.php?delete=$1
+
+RewriteRule ^_admin/modules_database/ _admin/_modules/mods_db-backup/database.php
+
+RewriteRule ^_admin/elements_google_pages/$ _admin/elements_google.php
+RewriteRule ^_admin/elements_seo/$ _admin/elements_seo.php
+RewriteRule ^_admin/elements_sitemap/$ _admin/elements_sitemap.php
+RewriteRule ^_admin/elements_sitemap_delete/([0-9]+)/$ _admin/elements_sitemap.php?delete=$1
+RewriteRule ^_admin/elements_sitemap_edit/([0-9]+)/$ _admin/elements_sitemap.php?id=$1
+
+RewriteRule ^_admin/settings_pages/$ _admin/settings.php
+RewriteRule ^_admin/help/$ _admin/help.php
+RewriteRule ^_admin/Adminlogout/$ _admin/logout.php
+
+RewriteRule ^about-us.html$ content.php?id=1
+RewriteRule ^graphic-design.html$ content.php?id=2
+RewriteRule ^business-packages.html$ content.php?id=3
+RewriteRule ^customer-support.html$ content.php?id=4
+RewriteRule ^contact-us.html$ contact-us.php?id=5
+RewriteRule ^products-all.html$ products.php
+RewriteRule ^products-([0-9]+).html$ products.php?id=$1
+RewriteRule ^products-(.*)-page.html$ products.php?pageid=$1
+RewriteRule ^products-(.*)-page-([0-9]+)-category.html$ products.php?pageid=$1&id=$2
+RewriteRule ^products-details-([0-9]+).html$ products_details.php?id=$1
+RewriteRule ^shopping-cart.html$ shopping_cart.php
+RewriteRule ^shopping-cart-info.html$ shopping_cart.php
+RewriteRule ^shopping-cart-delete-([0-9]+).html$ shopping_cart.php?delete=$1
+RewriteRule ^shopping-cart-product-([0-9]+).html$ shopping_cart.php?id=$1
+RewriteRule ^login.html$ account.php
+RewriteRule ^registration.html$ account-registration.php
+RewriteRule ^forgot-password.html$ account-access.php
+RewriteRule ^billing-info.html$ billing_information.php
+RewriteRule ^shipping-info.html$ shipping_information.php
+RewriteRule ^shipping-rate.html$ shipping_rate.php
+RewriteRule ^order-confirmation.html$ order_confirmation.php
+RewriteRule ^thankyou.html$ content.php?id=7
+
+RewriteRule ^account-information.html$ account_information.php
+RewriteRule ^account-billing-information.html$ account_billing_information.php
+RewriteRule ^account-shipping-information.html$ account_shipping_information.php
+RewriteRule ^account-order-information.html$ account_orders_information.php
+RewriteRule ^account-order-information-display-(.*).html$ account_orders_information_display.php?id=$1

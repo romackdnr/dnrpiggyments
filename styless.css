@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#666;
+	text-align:justify;
+	background-color:#999;
+	margin:0px;
+}
+
+a:link {
+	color: #951D21;
+	text-decoration: none;
+}
+a:visited {
+	color: #951D21;
+	text-decoration: none;
+}
+a:hover {
+	color: #951D21;
+	text-decoration: underline;
+}
+a:active {
+	color: #951D21;
+	text-decoration: none;
+}
+
+#wrapper {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 900px;
+	background-image: url(images/gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color:#FFF;
+}
+
+#header {
+	margin: 0 0 0 0;
+	height:170px;
+	background-image: url(images/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#menu {
+	position:relative;
+	left:100px;
+	top:138px;
+	width:750px;
+}
+
+#side-a {
+	float: center;
+	width: 100%;
+}
+
+#side-ainterior {
+	float: left;
+	width: 600px;
+	padding-left:50px;
+	padding-bottom:0px;
+	padding-right:0px;
+	padding-top:50px;
+}
+
+#side-acontacto {
+	float: left;
+	width: 450px;
+	padding-left:150px;
+	padding-bottom:0px;
+	padding-right:0px;
+	padding-top:50px;
+	text-align:left;
+}
+
+#side-b {
+	float:right;
+	width:200px;
+	padding:25px;
+}
+
+#menuhome {
+	position:relative;
+	left:130px;
+	top:20px;
+	width:652px;
+}
+
+
+
+#footer {
+	margin-top:25px;
+	clear: both;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	height:120px;
+	position:relative;
+	top:45px;
+	background:#fff;
+}
+
+#flashheader{
+	top:-70px;
+	position:relative;
+	left:0px;
+	width:900px;
+	height:170px;
+}
+
+#innerpages{
+	position:relative;
+	top:50px;
+	left:50px;
+	width:490px;
+}
+
+#lang {
+	position:relative;
+	float:right;
+	width:130px;
+	font-size:9px;
+	padding:5px;
+}

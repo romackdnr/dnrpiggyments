@@ -1,0 +1,48 @@
+/*----------------------------------------
+Name: page.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Page Alert Display*/
+.alert	{ clear:both; float:left; display:block; background:#A30; font:normal 15px Arial; color:#FFF; text-align:center; width:100%; margin:10px 0 0; padding:5px 0; }
+
+/*Page Manager*/
+#page_manager 													{ float:left; width:1070px; margin:15px 0; border:solid 1px #CCC; }
+#page_manager thead, tbody 							{ width:1070px; padding:5px; }
+#page_manager thead td 									{ background:#CCC; font-weight:bold; text-indent:5px; padding:7px 3px; }
+#page_manager tbody td 									{ text-indent:5px; padding:5px 3px; }
+#page_manager tbody td img							{ display:inline; margin:0 12px; }
+	tbody .row1 													{ background:#FFF; }
+	tbody .row2														{ background:#EFEFEF; }
+	tbody tr:hover												{ background:#DDD; } 
+#page_manager tfoot th 									{ background:#CCC; padding:5px; }
+#page_manager tfoot dl 									{ float:left; font-size:11px; font-weight:normal; width:100%; }
+#page_manager tfoot dl dd								{ color:#999; margin:0; }
+#page_manager tfoot dl dd a							{ color:#555; margin:0; }
+
+
+/*Create New Page*/
+#form_page 															{ float:left; width:1048px; margin:15px 0; }
+#form_page fieldset 										{ width:1046px; margin-bottom:20px; padding:10px; }
+#form_page legend 											{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#form_page ul 													{ display:block; list-style:none; width:auto; margin:10px 0; }
+#form_page ul li 												{ margin-bottom:10px; }
+#form_page input 												{ display:block; width:350px; margin:2px 0; padding:5px; }
+#form_page textarea 										{ display:block; width:550px; height:75px; margin:2px 0; padding:5px; overflow:auto; }
+
+
+/*Page Tabs*/
+#page_tabs 															{ float:left; position:relative; width:1070px; margin:10px 0; }
+#page_tabs #pt_selectors 								{ float:left; list-style:none; width:100%; margin:10px 0 0; padding:0; border-bottom:solid 1px #CCC; }
+#page_tabs #pt_selectors li							{ float:left; background:#CCC; font-size:11px; font-weight:bold; text-transform:uppercase; text-shadow:1px 1px 0 #FFF; cursor:pointer; margin-right:1px;
+																					-moz-border-radius:5px 5px 0 0; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px; }
+#page_tabs #pt_selectors li:first-child	{ margin-left:5px; }
+#page_tabs #pt_selectors li a						{ display:block; color:#555; padding:7px 10px; }
+#page_tabs #pt_selectors li a:hover			{ background:#da621f; color:#FFF; text-shadow:none;
+																					-moz-border-radius:5px 5px 0 0; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px; }

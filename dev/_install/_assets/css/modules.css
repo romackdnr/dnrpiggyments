@@ -1,0 +1,50 @@
+/*----------------------------------------
+Name: modules.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+#modules																{ float:left; position:relative; width:1048px; margin:0; padding:10px; border:solid 1px #CCC; }
+#module_box															{ width:1048px; margin:0; }
+#module_box h3							 						{ font:normal 17px Arial; margin-bottom:10px; }
+#module_box ul													{ float:left; width:1048px; list-style:none; margin:0; overflow:hidden; }
+#module_box ul li												{ float:left; line-height:12px; width:163px; height:113px; margin:0 11px 10px 0; border:solid 1px #CCC; }
+#module_box ul li	a											{ display:block; background:#eaeaea; color:#555; width:143px; height:103px; padding:0 10px 10px 10px; }
+#module_box ul li a:hover 							{ background:#DDD; cursor:pointer; }
+#module_box ul li span									{ position:relative; top:35px; font-size:11px; color:#666; margin:0; }
+#module_box ul li img										{ position:relative; top:10px; margin-right:5px; }
+
+
+/* Contents
+----------------------------------------*/
+
+#newsletter_page,
+#photo_page,
+#video_page,
+#others_page														{ position:relative; width:1070px; margin:15px 0; }
+
+#newsletter_page h3,
+#photo_page h3,
+#video_page h3,
+#others_page h3 												{ position:relative; font:normal 22px Arial; }
+
+/*Newsletter*/
+#newsletter_page fieldset 							{ width:auto; margin:20px 0; padding:10px; }
+#newsletter_page legend 								{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#newsletter_page ul 										{ display:block; list-style:none; width:auto; margin:10px 0; }
+#newsletter_page ul li 									{ margin-bottom:10px; }
+#newsletter_page input 									{ display:block; color:#666; width:350px; margin:2px 0; padding:5px; }
+#newsletter_page input:focus						{ color:#000; }
+#newsletter_page textarea 							{ display:block; width:1035px; height:150px; margin:2px 0; padding:5px; overflow:auto; }
+
+
+/*Photo Gallery*/
+
+/*Video Gallery*/
+
+/*Other Contents*/

@@ -1,0 +1,72 @@
+/*----------------------------------------
+Name: reset.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Clear Content Properties */
+.clearfix:after, section:after
+{ content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix, section
+{ display:block; min-height:1%; }
+* html .clearfix, * html section
+{ height:1%; }
+
+/* HTML Properties */
+html, body,
+div, ul, ol, li, dl, dt, dd, h1,
+pre, form, blockquote, fieldset, input
+						{ margin:0; padding:0; }
+pre,code,address,caption,cite,code,th 
+						{ font-size:small; font-weight:normal; font-style:normal; }
+img					{ border: none; }
+caption, th { text-align: left; }
+table 			{ border-collapse: collapse; border-spacing: 0; }
+
+/* Paragraph */
+p 					{ margin:0 0 10px; }
+
+/* Anchor Links */
+a 					{ outline:0; text-decoration:none; }
+a img 			{ border:0; text-decoration:none; }
+
+/* Block Alignments */
+.center			{ text-align:center; }
+.left				{ text-align:left; }
+.right			{ text-align:right; }
+
+/* Float Propeorties */
+.col1 			{ float:left; }
+.col2 			{ float:right; }
+
+/* H Properties */
+h2, h3, h4, h5, h6
+{ font-weight:normal; line-height:normal; margin:0 0 10px; }
+
+.smaller 		{ font-size:11px; }
+.small			{ font-size:small; }
+.medium			{ font-size:medium; }
+.large			{ font-size:large; }
+.larger			{ font-size:larger; }
+
+/* Block Spacing */
+.first      { margin-left:0 !important; padding-left:0 !important; }
+.last       { margin-right:0 !important; padding-right:0 !important; }
+.top        { margin-top:0 !important; padding-top:0 !important; }
+.bottom     { margin-bottom:0 !important; padding-bottom:0 !important; }
+
+/* Line Properties */
+.hr-dot 		{ clear:both; display:block; background:url(../../assets/images/hr_dot.jpg) repeat-x; width:100%; height:1px; margin:10px 0; }
+.hr-line 		{ clear:both; display: block; background:none; width:100%; height:1px; margin:10px 0 0; border:none; border-top:solid 1px #CCC; }
+.hr-clear		{ clear:both; float:none; display:block; height:0; }
+
+/* sIFR CSS Codes */
+.sIFR-flash { visibility:visible !important; margin:0; }
+.sIFR-replaced { visibility:visible !important; }
+span.sIFR-alternate { position:absolute; left:0; top:0; width:0; height:0; display:block; overflow:hidden; }
+.sIFR-flash + div[adblocktab=true] { display:none !important; }
+
+.sIFR-hasFlash h2 { visibility:hidden; display:block; }
+.sIFR-hasFlash h3 { visibility:hidden; display:block; }

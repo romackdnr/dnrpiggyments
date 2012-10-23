@@ -1,0 +1,70 @@
+/*----------------------------------------
+Name: elements.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Page Alert Display*/
+.alert	{ clear:both; float:left; display:block; background:#A30; font:normal 15px Arial; color:#FFF; text-align:center; width:100%; margin:10px 0 0; padding:5px 0; }
+
+/*Page Background*/
+.ebg																		{ background:url(../images/bg_elements.jpg) no-repeat center; }
+
+#google, #seo, #sitemap									{ float:left; position:relative; background:#FFF; width:1050px; min-height:500px; margin:20px 10px; }
+#google h3, #seo h3, #sitemap h3				{ font:normal 17px Arial; }
+
+#google ul 															{ float:left; list-style:none; width:1070px; }
+#google ul li 													{ float:left; width:355px; margin:10px 0; }
+#google ul li.google_analytics h4 			{ background:url(../images/icons/.google_apps.png) no-repeat 0 -484px; font-size:15px; font-weight:bold; height:25px; margin:0 0 5px -25px; padding:5px 0 0 45px; }
+#google ul li.google_webmaster h4				{ background:url(../images/icons/.google_apps.png) no-repeat 0 -415px; font-size:15px; font-weight:bold; height:25px; margin:0 0 5px -25px; padding:5px 0 0 45px; }
+#google ul li.google_others	h4					{ background:url(../images/icons/.google_apps.png) no-repeat 0 -763px; font-size:15px; font-weight:bold; height:26px; margin:0 0 5px -25px; padding:5px 0 0 45px; }
+#google ul li p 												{ display:block; margin:0 0 5px 20px; }
+#google ul li p a												{ color:#555; text-decoration:underline; }
+
+
+/*SlickPlan Sitemap*/
+iframe																	{ position:relative; margin:0 0 20px 0;  padding-bottom:20px; border-bottom:solid 1px #CCC; }
+
+/*Sitemap Page*/
+#sitemap_page 													{ float:left; width:385px; margin:15px 0; }
+#sitemap_page fieldset 									{ width:auto; margin-bottom:20px; padding:10px; }
+#sitemap_page legend 										{ font:normal 15px Arial; color:#777; padding:0 10px; }
+#sitemap_page ul 												{ display:block; list-style:none; width:auto; margin:10px 0; }
+#sitemap_page ul li 										{ margin-bottom:10px; }
+#sitemap_page input 										{ display:block; color:#666; width:350px; margin:2px 0; padding:5px; }
+#sitemap_page input:focus								{ color:#000; }
+
+
+/*Sitemap Manager*/
+#sitemap_manager 												{ float:right; width:655px; margin:15px 0; border:solid 1px #CCC; }
+#sitemap_manager thead, tbody 					{ width:655px; padding:5px; }
+#sitemap_manager thead td 							{ background:#CCC; font-weight:bold; text-indent:5px; padding:7px 3px; }
+#sitemap_manager tbody td 							{ text-indent:5px; padding:5px 3px; }
+#sitemap_manager tbody td img						{ display:inline; margin:0 12px; }
+	tbody .row1 													{ background:#FFF; }
+	tbody .row2														{ background:#EFEFEF; }
+	tbody tr:hover												{ background:#DDD; } 
+#sitemap_manager tfoot th 							{ background:#CCC; padding:5px; }
+#sitemap_manager tfoot dl 							{ float:left; font-size:11px; font-weight:normal; width:100%; }
+#sitemap_manager tfoot dl dd a					{ color:#555; margin:0 0; }
+
+
+/*Page Tabs*/
+#page_tabs 															{ float:left; position:relative; width:1070px; margin:10px 0; padding:0; }
+#page_tabs #pt_selectors 								{ float:left; list-style:none; width:100%; margin:10px 0 0; padding:0; border-bottom:solid 1px #CCC; }
+#page_tabs #pt_selectors li							{ float:left; background:#CCC; font-size:11px; font-weight:bold; text-transform:uppercase; text-shadow:1px 1px 0 #FFF; cursor:pointer; margin-right:1px; 
+																					-moz-border-radius:5px 5px 0 0; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px; }
+#page_tabs #pt_selectors li:first-child	{ margin-left:5px; }
+#page_tabs #pt_selectors li a						{ display:block; color:#555; padding:7px 10px; }
+#page_tabs #pt_selectors li a:hover			{ background:#da621f; color:#FFF; text-shadow:none;
+																					-moz-border-radius:5px 5px 0 0; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px; }
+
+
+/* IE Hack Elements
+----------------------------------------*/
+#google, #seo, #sitemap									{ *height:500px; }

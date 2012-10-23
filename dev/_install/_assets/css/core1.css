@@ -1,0 +1,58 @@
+/*----------------------------------------
+Name: core1.css | Version: 1 [xhtml5]
+Developed by: Mark Joseph Rivera
+Date Created: April 2010
+Last Updated: -- --, 2010
+Copyright: 2010 @ Dog and Rooster
+----------------------------------------*/
+
+/* Elements
+----------------------------------------*/
+
+/*Imports*/
+@import url("reset.css");
+
+/*Display Block Container*/
+header, section, footer, article, aside, nav, figure { display: block; text-align:left; }
+
+body 			{ position:relative; background:url(../images/bg_header.jpg) repeat-x top; font:normal 12px/16px Arial; color:#555; }
+#wrapper 	{ float:left; position:relative; background:url(../../assets/images/bg_footer.jpg) repeat-x bottom; width:100%; }
+figure 		{ position:relative; width:298px; height:100%; margin:auto; }
+footer 		{ position:fixed; bottom:0; background:#e5e5e5; font-size:11px; text-align:center; text-transform:capitalize; width:100%; padding:10px 0; }
+footer a	{ color:#da621f; text-decoration:underline; cursor:pointer; }
+
+
+/* Contents
+----------------------------------------*/
+
+/*Security Login*/
+#security_login 						{ position:relative; background:url(../images/bg_form.png) no-repeat; text-align:center; width:298px; height:231px; margin:170px 0 10px; padding:25px 0 0; }
+#security_login h2 					{ font-size:19px; letter-spacing:-1px; margin-bottom:20px; }
+#security_login span 				{ display:block; font:normal 11px Tahoma; color:#A30; margin:-17px 0 4px!important; }
+#security_login .label			{ font-size:17px; margin:0 0 5px; }
+#security_login input#un		{ display:block; width:210px; padding:3px 4px; margin:0 0 5px 0; }
+#security_login input#pw		{ display:block; width:210px; padding:3px 4px; margin:0 0 10px 0; }
+#security_login input#cb		{ position:relative; top:auto; }
+#security_login button			{ display:block; background:#da621f; font:bold 15px Arial; color:#FFF; text-shadow:0 0 1px #333; cursor:pointer; margin:20px auto 0; padding:5px 8px; border:solid 1px #CCC;
+														  -moz-border-radius:5px; -webkit-border-radius:5px; }
+
+/*JQuery Label Form*/
+form fieldset 							{ display:block; font:normal 13px Arial !important; width:220px; margin:0 39px; border:none; }
+form p 											{ position:relative; margin:0 0 5px; }
+form p label 								{ position:absolute; top:0; left:0; color:#777; text-transform:capitalize; }
+form fieldset p input,
+form fieldset p textarea		{ display:block; padding:5px; width:auto; height:auto; margin:0; border:solid 1px #ccc; }
+form fieldset p label 			{ display:block; width:auto; margin:4px 6px; padding:0; }
+
+/*Password Recovery*/
+.recover 										{ display:none; margin:10px auto 0; padding:10px 0; }
+.recover input 							{ width:210px; margin-right:5px; padding:3px 4px; }
+.recover button 						{ min-width:120px; padding:1px 3px; }
+
+
+/* IE Hack Elements
+----------------------------------------*/
+#security_login button 			{ *padding:5px; *margin:15px auto 0; }
+#security_login h2 					{ *margin-bottom:15px; }
+#security_login p label 		{ *left:-1px; }
+.recover button 						{ *width:120px; }
