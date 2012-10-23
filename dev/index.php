@@ -31,7 +31,11 @@
         	<dt><img src="<?=$ROOT_URL?>products_image/<?=$products->fldProductsImage?>" alt="<?=$products->fldProductsName?>" width="88"></dt>
           <dd>
           	<big>$<?=number_format($products->fldProductsPrice,2)?></big>
-            <a href="products-details-<?=$products->fldProductsId?>.html" class=details>View Details</a> &nbsp; <!-- <a href="shopping-cart-product-<?=$products->fldProductsId?>.html" class=cart>Add to Cart</a> -->
+            <a href="products-details-<?=$products->fldProductsId?>.html" class=details>View Details</a> &nbsp; 
+            <? $optionExists = TempCart::checkProductOption($products->fldProductsId);?>
+            <? if ($optionExists==0): ?>
+                <a href="shopping-cart-product-<?=$products->fldProductsId?>.html" class=cart>Add to Cart</a>
+            <? endif; ?>
             <h3><?=$products->fldProductsName?></h3>
             <?=substr($products->fldProductsOverview,0,75)?> [...]
           </dd>
