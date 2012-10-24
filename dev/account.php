@@ -1,9 +1,10 @@
 <?php 
 include 'manager/_pi/base.php'; 
 
-if(isset($_SESSION['client_id'])) {
-	$client_id = $_SESSION['client_id'];
-	$links = $ROOT_URL.'billing-info.html';
+if( (isset($_SESSION['logged_in'])) && ($_SESSION['logged_in'] == true) ) {
+	// $client_id = $_SESSION['client_id'];
+	// $links = $ROOT_URL.'billing-info.html';	
+	$links = $ROOT_URL . 'account-information.php';
 	header("Location: $links");	
 } else {
 	$client_id = session_id();
@@ -15,19 +16,20 @@ if(isset($_POST['login'])) {
 	$client = $_POST;
 	settype($client,'object');
 	if(Client::checkLogin($client)==1) {
-		    $clients = Client::getInfo($client);			
-			$_SESSION['client_id']	 = $clients->fldClientID;	
-			$xclient = session_id();
-			$condition = "fldTempCartClientID='$xclient'";
-			if(TempCart::countTempcartbyCondition($condition)>=1) {
-				//change the client id
-				TempCart::updateTempcartClient($_SESSION['client_id'],$xclient);
-				$links = $ROOT_URL.'billing-info.html';
-				header("Location: $links");					
-			} else {				
-				$links = $ROOT_URL . 'account-information.php';
-				header("Location: $links");			
-			}
+		$_SESSION['logged_in'] = true;
+	    $clients = Client::getInfo($client);			
+		$_SESSION['client_id']	 = $clients->fldClientID;	
+		$xclient = session_id();
+		$condition = "fldTempCartClientID='$xclient'";
+		if(TempCart::countTempcartbyCondition($condition)>=1) {
+			//change the client id
+			TempCart::updateTempcartClient($_SESSION['client_id'],$xclient);
+			$links = $ROOT_URL.'billing-info.html';
+			header("Location: $links");					
+		} else {
+			$links = $ROOT_URL . 'account-information.php';
+			header("Location: $links");			
+		}
 	} else {		
 		$error = "Invalid username or password";
 	}
