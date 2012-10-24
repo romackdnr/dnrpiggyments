@@ -8,25 +8,39 @@ if(isset($_POST['email']))
   $email = $_POST['email'];
   $client = Client::findClientByEmail($email);
 
-  $subject = "Your password at www.piggyments.com"; 
-  $message = "Hi,
-
-  Your Password: {$client->fldClientPassword}
-
-  http://www.piggyments.com/dev/login.html
-  Once logged in you can change your password 
-
-  Thanks! 
-  Site admin 
-
-  This is an automated response, please do not reply!"; 
+  $subject = "Password request for Piggyments.com"; 
+  $message = "<html>
+    <head>
+      <title>{$subject}</title>
+    </head>
+    <body>
+      <p>Hi {$client->fldClientFirstName} {$client->fldClientLastname}</p>
+      <table>
+        <tr>
+          <td>Your Username:</td>
+          <td><b>{$client->fldClientUsername}</b></td>
+        </tr>
+        <tr>
+          <td>Your Password:</td>
+          <td><b>{$client->fldClientPassword}</b></td>
+        </tr>
+      </table>
+      <p>Login here: <a href='http://www.piggyments.com/dev/login.html'>http://www.piggyments.com/dev/login.html</a>. Once logged in you can change your password </p>
+      <p>Thanks,</p>
+      <p>Piggyments.com Site Admin</p>
+      <p>This is an automated response, please do not reply.</p>
+    </body>
+    </html>";
 
   if(!$client) {
     $mail_status = "Invalid email address.";
   } else {
-    $mail_status = (mail($email, $subject, $message, 
-      "From: Piggyments.com <noreply@piggyments.com>\n 
-      X-Mailer: PHP/" . phpversion()))
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    $headers .= 'To: ' . $client->fldClientFirstName . ' ' . $client->fldClientLastname . ' <' . $email . '>' . "\r\n";
+    $headers .= 'From: Piggyments.com <noreply@piggyments.com>' . "\r\n";
+
+    $mail_status = (mail($email, $subject, $message, $headers) )
       ?  
       $mail_status = "Please check your inbox, <b>{$email}</b> to retrieve your password."
       :
@@ -62,22 +76,22 @@ if(isset($_POST['email']))
     </menu>
 
     <h2>Follow Us</h2>
-    <ul class=socialnetwork>
+    <ul class="socialnetwork">
     	<li><a href="#"><img src="assets/images/social-facebook.png" width="24" height="24" alt="Facebook"> Become a Fan</a></li>
       <li><a href="#"><img src="assets/images/social-twitter.png" width="24" height="24" align="Twitter"> Follow us on Twitter</a></li>
     </ul>
   </aside>
-  <article id=frame_box>
+  <article id="frame_box">
   	<hgroup>
       <h1>Forgot Username or Password?</h1>
       <hr />
     </hgroup>
 
-    <? if(!is_null($mail_status)): ?>
-    <div>
-      <b><?= $mail_status ?></b>
-      <br />
-    </div>
+    <? if(isset($mail_status)): ?>
+      <br /><br />
+      <div id='messages'>
+        <span><?= $mail_status ?></span>
+      </div><br />
     <? endif ?>
 
     <div class='account_info col1'>
