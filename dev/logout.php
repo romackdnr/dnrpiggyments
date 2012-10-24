@@ -27,10 +27,5 @@ session_destroy();
  * from http://php.net/manual/en/function.session-destroy.php
  */
 
-$ROOT_URL = "http://piggyments.com/dev/";
-
-// OFFLINE
-// $ROOT_URL = "http://localhost/dev/";
-
-header("Location: $ROOT_URL");
+header("Location: http://" . $_SERVER["HTTP_HOST"] . "/dev/");
 ?>
