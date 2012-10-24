@@ -26,6 +26,3 @@
 	<li><a href="http://www.facebook.com/piggyments"><img src="assets/images/social-facebook.png" width="24" height="24" alt="Facebook"> Become a Fan</a></li>
 	<li><a href="https://twitter.com/piggyments"><img src="assets/images/social-twitter.png" width="24" height="24" align="Twitter"> Follow us on Twitter</a></li>
 </ul>
-<pre>
-	<? print_r($_SESSION); ?>
-</pre>
