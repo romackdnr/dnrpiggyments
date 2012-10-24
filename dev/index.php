@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include 'manager/_pi/base.php';
 $page1 = Pages::findPages(1);
 ?>
